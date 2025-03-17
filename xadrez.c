@@ -32,7 +32,7 @@ int main() {
     int bispo = 0;
     int rainha = 0;
 
-    printf("\n **** Movimentação da Torre: ****\n");
+    printf("\n **** Movimentação da Torre: ****\n\n");
 
     while (torre < 5) {
         
@@ -41,18 +41,29 @@ int main() {
         torre++;
     }
 
-    printf("\n **** Movimentação do Bispo: ****\n");
+    printf("\n **** Movimentação do Bispo: ****\n\n");
 
     do {
         printf("Cima, Direita \n");
         bispo++;
     } while (bispo < 5);
 
-    printf("\n **** Movimentação da Rainha: ****\n");
+    printf("\n **** Movimentação da Rainha: ****\n\n");
 
     while (rainha < 8) {
         printf("Esquerda \n");
         rainha++;
+    }
+
+    printf("\n **** Movimentação do Cavalo: ****\n\n");
+
+    for(int movimentoL = 1; movimentoL < 2; movimentoL++) {
+
+        for (int cavalo = 1; cavalo <= 2; cavalo++) {
+            printf("Baixo \n");
+        }
+
+        printf("Esquerda \n");
     }
 
     return 0;
